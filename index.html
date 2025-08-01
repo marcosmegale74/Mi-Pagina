@@ -65,23 +65,27 @@
     }
 
     .whatsapp-btn {
-      background-color: #25D366;
+      background: linear-gradient(45deg, #1ED760, #1db954);
       color: white;
-      border: none;
-      padding: 20px 35x;
-      font-size: 20px;
-      border-radius: 10px;
+      border: 2px solid white;
+      padding: 18px 40px;
+      font-size: 22px;
+      border-radius: 12px;
       cursor: pointer;
       text-decoration: none;
       font-weight: bold;
-      display: inline-block;
-      transition: background-color 0.3s ease;
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      margin: 20px auto;
+      box-shadow: 0 0 12px #1ED760;
+      transition: all 0.3s ease;
     }
 
     .whatsapp-btn:hover {
-      background-color: #1ebc59;
+      background: #1ebc59;
+      box-shadow: 0 0 20px #1ED760;
     }
-
     /* Media query para pantallas pequeñas */
     @media (max-width: 600px) {
       body {
