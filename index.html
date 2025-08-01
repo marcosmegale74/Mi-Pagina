@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Promo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      /* Fondo */
+      background-image: url("casino-foto.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #001030;
+      min-height: 100vh;
+      padding: 20px; /* para que no pegue a los bordes en pantallas pequeñas */
+    }
+
+    .popup {
+      background-color: rgba(0, 0, 58, 0.9);
+      padding: 40px 30px;
+      border-radius: 15px;
+      text-align: center;
+      color: yellow;
+      max-width: 360px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      /* Para que el texto no quede muy pegado en pantallas muy pequeñas */
+      box-sizing: border-box;
+    }
+
+    .popup h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+
+    .popup p {
+      margin: 8px 0;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .decor {
+      margin: 20px 0;
+      color: white;
+      font-size: 24px;
+      letter-spacing: 3px;
+      user-select: none;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebc59;
+    }
+
+    /* Media query para pantallas pequeñas */
+    @media (max-width: 600px) {
+      body {
+        background-image: url("foto-celular.jpg"); /* opcional */
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        padding: 15px;
+      }
+
+      .popup {
+        padding: 25px 20px;
+        max-width: 100%;
+      }
+
+      .popup h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      .popup p {
+        font-size: 14px;
+      }
+
+      .decor {
+        font-size: 18px;
+        margin: 15px 0;
+      }
+
+      .whatsapp-btn {
+        padding: 12px 25px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="popup">
+    <h1>¡50% DE BONO EN LA PRIMERA CARGA!</h1>
+    <p>¡ATENCIÓN LAS 24HS!</p>
+    <p>¡PAGOS EN EL ACTO!</p>
+    <div class="decor">▲▲▲▲▲▲▲</div>
+    <a
+      class="whatsapp-btn"
+      href="https://wa.me/5491138736447?text=Hola,%20quiero%20más%20info"
+      target="_blank"
+      >WHATSAPP</a
+    >
+    <div class="decor">▼▼▼▼▼▼▼</div>
+  </div>
+</body>
+</html>
